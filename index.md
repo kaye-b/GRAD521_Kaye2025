@@ -18,7 +18,6 @@ The raw survey data consists of approximately 1,100 rows and 90 columns, some of
 If either of PIs for this project leaves UW, the responsibility for the data will remain with the other PI and with the Center for Studies in Demography and Ecology (CSDE) at UW. Any of the above roles assigned to a PI or other person leaving the project will be reassigned from within the CSDE.
 
 # Data standards and metadata
-## Metadata
 Metadata will be created to document (1) dataset variables and (2) all data processing and analysis scripts.
 
 Variables will be documented using a codebook, modeled on Data Documentation Initiative (DDI) metadata standards, with information on each variable, including the full range of values or categories, data type, description, details on missing data and source. The codebook will also record how variables were cleaned or transformed, and note any derived variables. Initial codebook will be created after data cleaning, using the R package dataMaid, with additionaly notes about data cleaning added manually. Codebook will be updated with any derived variables created as a part of analyses.
@@ -71,16 +70,15 @@ Data organization will primarily consist of labeling and organizing scripts (fun
 
 # Access and data sharing
 Data access will be managed by the University of Washington Homelessness Count Project (UWHCP) team.
-Data access is restricted for the confidentiality of research participants and because of funder requirements. These protections restrict the ability to share raw data, however data can be shared in the aggregate (averages, totals, etc.). 
+Data access is restricted for the confidentiality of research participants and because of funder requirements. These protections restrict the ability to share raw data, however data will be shared in the aggregate (averages, totals, proportions, etc.). Aggregated data tables in a downloadable format will be made publicly available through data repositories and through agency partner King Country Regional Housing Authority (KCRHA).
 
-Because of restrictions to protect the confidentiality of research participants, data will not be made publicly available. Access to the raw data is granted through a data use agreement, managed by the University of Washington Homelessness Count Project (UWHCP) team (Project leads: Zach Almquist and Nathalie Williams). All researchers wanting access to the data must 1) participate in the interviewer training at UW and 2) complete basic training in human subject protection. 
+Access to the de-identified raw data is granted through a data use agreement, managed by the University of Washington Homelessness Count Project (UWHCP) team (current project leads: Zach Almquist and Nathalie Williams). Any researcher wanting access to the data should reach out to the UWHCP team project leads to request access. Before accessing the data all researchers must 1) participate in the interviewer training at UW and 2) complete basic training in human subject protection. R Code for analyses and metadata will be shared with the UWHCP research group via a GitHub repository. Access to GitHub repository and code will be managed by the UWHCP team under the same data use agreement as the raw data.
 
-Aggregated data has been made publicly available in summary tables and charts on GitHub (<a href="https://uwescience.github.io/DSSG2024_understanding_homelessness/" target="_blank"> 2024 Data Science for Social Good “Understanding Homelessness” project </a>).
-
-R Code for analyses and metadata (which will make use of a subset of the data) will be shared with the research group via a GitHub repository. Access to GitHub repository and code will be managed by the UWHCP team under the same data use agreement as the raw data.
-Any publication that uses the data must cite the UWHCP team using the following format:
+Data shared in the aggregate and data products will be governed under a Creative Commons Open (CCO) license. Under the terms of the CCO license, derivative works may be created and disseminated, provided that individual privacy is protected and appropriate attribution is maintained. Publication that uses the data must cite the UWHCP team using the following format:
 
 Zack Almquist, Amy Hagopian, Paul Hebert, Nathalie Williams and UWHC Project Team (2023). UW Seattle area homelessness count Project, Center for Studies in Demography and Social Ecology, University of Washington.
 
 # Archiving and preservation
-Data will be archived indefinitely on secure servers managed by The Center for Studies in Demography and Ecology (CSDE) at the University of Washington. (Find out more...)
+All R scripts generated while working with the raw survey data will be archived with the UWHCP team in accordance with UW's data management and security policies. Data preservation will follow institutional guidelines fo retention, and access, while ensuring compliance with confidentiality requirments. UW policy mandates data retention for 5 years past the conclusion of the study.
+
+At the conclusion of the project, the GitHub repository containing analysis scripts and aggregate data will be archived through a DOI-minting service. This will ensure long-term preservation, citation stability, and public accessibility of non-identifiable, aggregate-level findings.
